@@ -1,0 +1,15 @@
+--------------------------------info[18:47:07]--------------------------------
+System.Exception: v2rayN start up
+
+ 
+--------------------------------Unexpected character encountered while parsing value: d. Path '', line 0, position 0.[18:47:15]--------------------------------
+Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: d. Path '', line 0, position 0.
+   在 Newtonsoft.Json.JsonTextReader.ParseValue()
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.ReadForType(JsonReader reader, JsonContract contract, Boolean hasConverter)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 v2rayN.Forms.MainForm.<MainForm_Shown>b__7_4(Object sender2, ResultEventArgs args)
+   在 v2rayN.Handler.V2rayUpdateHandle.Ws_DownloadStringCompleted(Object sender, DownloadStringCompletedEventArgs e)
+
+ 

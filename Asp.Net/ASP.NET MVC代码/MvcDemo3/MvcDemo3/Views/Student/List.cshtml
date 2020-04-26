@@ -1,0 +1,32 @@
+﻿@* 在开头，声明传入的模型 *@
+@model List<MvcDemo3.Models.Student>
+
+@* @符号后面跟着大括号表示编写代码片段 *@
+@{
+    ViewBag.Title = "List";
+    int a = 12;
+    string name = "xxlisixx";
+    string html = "<span style=color:red>hello</span>";
+}
+
+<h2>List</h2>
+<ul>
+    @* @后面内容会输出在网页上 *@
+    @a
+    @name
+    @(a+22)
+    <span>1002342@qq.com</span>
+
+    @* 下面输入一个@符号 *@
+    <span>@@</span>
+
+    @* 通过HTML代码显示原生HTML内容 *@
+    @Html.Raw(html)
+
+
+    @foreach (var stu in Model)
+    {
+        <li>@stu.Name</li>
+    }
+</ul>
+

@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "ShowData";
+    @*Layout = "此处可写你的布局页全名和路径，例如~/Views/Shared/xxx.cshtml"*@
+}
+
+@*声明传入的model类型，可以不声明这样下面写时就不会有提示，注意：一定要和View方法参数里面传递的model类型一致*@
+@model MvcDemo2.Models.Student
+
+<h2>ShowData</h2>
+
+@Model.Id
+@Model.Name
+@Model.Age

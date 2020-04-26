@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h3>初始的默认首页Index</h3>
+<style>
+    .mystyle{
+        color:red
+    }
+</style>
+
+@Html.Action("GetPartial")@*通过调用action获得部分页面，这种方式可以用专门的action去处理PartialPage*@
+@Html.Partial("_PartialPage1",ViewData["name"]="joe")@*只有页面没有处理方法，可以通过ViewData或者model传数据*@
+
+
+@Html.RouteLink("体育板块","Sport_default",new { controller = "Home", action = "Index" },new { @class = "mystyle" })
+
+@Html.ActionLink("获取图片","GetFile",new { name= "Timeless_UHD.jpg" },new { style="color:orange"})
+
+@Url.Action("GetFile",new { name="hehe"})
+
+@Url.RouteUrl("Admin_default", new { controller="Home",action="Index",userid="12345"})

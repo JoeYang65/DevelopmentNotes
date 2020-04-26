@@ -1,0 +1,10 @@
+--------------------------------info[13:14:49]--------------------------------
+System.Exception: v2rayN start up
+
+ 
+--------------------------------无效的 URI: 未能确定 URI 的格式。[13:15:12]--------------------------------
+System.UriFormatException: 无效的 URI: 未能确定 URI 的格式。
+   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 v2rayN.Handler.V2rayUpdateHandle.WebDownloadString(String url)
+
+ 
